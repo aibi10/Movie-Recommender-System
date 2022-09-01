@@ -15,50 +15,40 @@ The purpose of a recommendation system basically is to search for content that w
 - Twitter , Youtube .
 
 - Which music you are listening , what singer are you watching . Form embeddings for the features .
-	
 - User specific actions or similar items reccomendation .
-	
 - It will create a vector of it .
-	
 - These systems make recommendations using a user's item and profile features. They hypothesize that if a user was interested in an item in the past, they will once again be interested in it in the future
-	
 - One issue that arises is making obvious recommendations because of excessive specialization (user A is only interested in categories B, C, and D, and the system is not able to recommend items outside those categories, even though they could be interesting to them).
 
 ### 2 ) Collaborative Based :
-		
+
 - Collaborative filtering systems, which are based on user-item interactions.
-	
 - Clusters of users with same ratings , similar users .
-	
 - Book recommendation , so use cluster mechanism .
-	
 - We take only one parameter , ratings or comments .
-	
-- In short, collaborative filtering systems are based on the assumption that if a user likes item A and another user likes the same item A as well as another item, item B, the first user could also be interested in the second item . 
-	
+- In short, collaborative filtering systems are based on the assumption that if a user likes item A and another user likes the same item A as well as another item, item B, the first user could also be interested in the second item .
 - Issues are :
 
-	- User-Item nXn matrix , so computationally expensive .
+  - User-Item nXn matrix , so computationally expensive .
 
-	- Only famous items will get reccomended .
+  - Only famous items will get reccomended .
 
-	- New items might not get reccomended at all .   
+  - New items might not get reccomended at all .
 
 ### 3 ) Hybrid Based :
-	
+
 - Hybrid systems, which combine both types of information with the aim of avoiding problems that are generated when working with just one kind.
 
 - Combination of both and used now a days .
 
-- Uses : word2vec , embedding .           
+- Uses : word2vec , embedding .
 
 # About this project:
 
 This is a streamlit web application that can recommend various kinds of similar movies based on an user interest.
 here is a demo,
 
-* [Click here to run it live on server](https://movie-recommeder-system.herokuapp.com/)
-
+- [Click here to run it live on server](https://movie-recommeder-system.herokuapp.com/)
 
 # Demo:
 
@@ -68,10 +58,9 @@ here is a demo,
 
 <img src="demo/3.png" alt="workflow" width="70%">
 
-
 # Dataset has been used:
 
-* [Dataset link](https://www.kaggle.com/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv)
+- [Dataset link](https://www.kaggle.com/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv)
 
 # Concept used to build the model.pkl file : cosine_similarity
 
@@ -86,6 +75,7 @@ here is a demo,
 5 . For more details , check URL : https://www.learndatasci.com/glossary/cosine-similarity/
 
 # How to run?
+
 ### STEPS:
 
 Clone the repository
@@ -93,6 +83,7 @@ Clone the repository
 ```bash
 https://github.com/entbappy/Movie-Recommender-System-Using-Machine-Learning.git
 ```
+
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
@@ -103,12 +94,11 @@ conda create -n movie python=3.7.10 -y
 conda activate movie
 ```
 
-
 ### STEP 02- install the requirements
+
 ```bash
 pip install -r requirements.txt
 ```
-
 
 ```bash
 #run this file to generate the models
@@ -117,14 +107,14 @@ Movie Recommender System Data Analysis.ipynb
 ```
 
 Now run,
+
 ```bash
 streamlit run app.py
 ```
 
-
 ```bash
-Author: Bappy Ahmed
+Author: Abhishek Singh
 Data Scientist
-Email: entbappy73@gmail.com
+Email: isingh.abhishek10@gmail.com
 
 ```
