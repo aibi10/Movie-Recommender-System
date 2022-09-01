@@ -1,0 +1,7 @@
+### dependency
+streamlit
+notebook
+nltk
+
+### local packages -
+-e . 
