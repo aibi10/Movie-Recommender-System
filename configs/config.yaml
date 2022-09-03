@@ -1,0 +1,3 @@
+data:
+  local_dir: data
+  URL: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv
