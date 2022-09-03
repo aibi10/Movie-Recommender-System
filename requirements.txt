@@ -2,6 +2,7 @@
 streamlit
 notebook
 nltk
+sklearn
 
 ### local packages -
 -e . 
