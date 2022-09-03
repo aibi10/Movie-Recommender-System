@@ -3,6 +3,7 @@ streamlit
 notebook
 nltk
 sklearn
-
+mlflow
+PyYAML
 ### local packages -
 -e . 
