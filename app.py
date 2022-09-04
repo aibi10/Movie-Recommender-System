@@ -47,7 +47,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.header('Movie Recommender System Using Machine Learning')
+st.header('Movie Recommender System')
 movies = pickle.load(open('artifacts/movie_list.pkl', 'rb'))
 similarity = pickle.load(open('artifacts/similarity.pkl', 'rb'))
 
