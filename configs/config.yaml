@@ -1,3 +1,17 @@
 data:
   local_dir: data
   URL: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv
+  data_folder: tmdb-movie-metadata
+  movie_file_name: tmdb_5000_movies.csv
+  credit_file_name: tmdb_5000_credits.csv
+  merge_column_name: title
+
+params:
+  movie_id: movie_id
+  title: title
+  overview: overview
+  genres: genres
+  keywords: keywords
+  cast: cast
+  crew: crew
+  tags: tags

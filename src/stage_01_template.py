@@ -37,7 +37,7 @@ def main(config_path):
 
     except Exception as e:
         logging.info("there is some problem while downloading the file")
-        logging.info(e)
+        logging.exception(e)
 
 
 if __name__ == "__main__":
