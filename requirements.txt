@@ -5,7 +5,7 @@ nltk
 sklearn
 mlflow
 PyYAML
-pickle
+pickle5
 pathlib
 opendatasets
 requests
