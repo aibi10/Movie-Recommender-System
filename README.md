@@ -100,13 +100,19 @@ conda activate movie
 pip install -r requirements.txt
 ```
 
-```bash
-#run this file to generate the models
+### STEP 03- create environment specification in conda.yaml
 
-Movie Recommender System Data Analysis.ipynb
+```bash
+conda env export > conda.yaml
 ```
 
-Now run,
+### STEP 04 - run this command to genrate pickle files
+
+```bash
+mlflow run . --no-conda
+```
+
+### STEP 05 - run this command to run the app in your browser
 
 ```bash
 streamlit run app.py

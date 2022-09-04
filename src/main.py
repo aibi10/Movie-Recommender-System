@@ -18,3 +18,21 @@ logging.basicConfig(
     format="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s",
     filemode="a"
 )
+
+
+def main():
+    with mlflow.start_run() as run:
+        mlflow.run(".", "get_data", use_conda=False)
+        mlflow.run(".", "creating_model", use_conda=False)
+
+
+if __name__ == "__main__":
+
+    try:
+        logging.info("\n***************************")
+        logging.info(f">>>>>>>>>>> stage   {STAGE}   started <<<<<<<<<<")
+        main()
+        logging.info(f">>>>>>>>> stage  {STAGE}   completed <<<<<<<<<<<")
+    except Exception as e:
+        logging.exception(e)
+        raise e

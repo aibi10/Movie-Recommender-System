@@ -1,0 +1,17 @@
+name: MLflow-app1
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    command: "pip install -e . && python src/main.py"
+
+  get_data:
+    parameters:
+      config: { type: str, default: "configs/config.yaml" }
+    command: "python src/stage_01_template.py --config={config}"
+
+  creating_model:
+    parameters:
+      config: { type: str, default: "configs/config.yaml" }
+    command: "python src/stage_02_template.py --config={config}"
