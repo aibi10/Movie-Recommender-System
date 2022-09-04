@@ -5,7 +5,6 @@ nltk
 sklearn
 mlflow
 PyYAML
-kaggle
 pickle
 pathlib
 opendatasets
