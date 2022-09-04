@@ -61,8 +61,7 @@ if st.button('Show Recommendation'):
     recommended_movie_names, recommended_movie_posters = recommend(
         selected_movie)
 
-    col1, col2, col3 = st.columns(
-        3, gap="large")
+    col1, col2, col3 = st.columns([5, 5, 5], gap="large")
     with col1:
         st.image(recommended_movie_posters[0])
         st.text(recommended_movie_names[0])
@@ -74,8 +73,7 @@ if st.button('Show Recommendation'):
         st.image(recommended_movie_posters[2])
         st.text(recommended_movie_names[2])
 
-    col4, col5, col6 = st.columns(
-        3, gap="large")
+    col4, col5, col6 = st.columns([7, 7, 7], gap="large")
     with col4:
         st.image(recommended_movie_posters[3])
         st.text(recommended_movie_names[3])
