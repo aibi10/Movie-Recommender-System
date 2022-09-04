@@ -6,5 +6,10 @@ sklearn
 mlflow
 PyYAML
 kaggle
+pickle
+pathlib
+opendatasets
+requests
+streamlit
 ### local packages -
 -e . 
