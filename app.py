@@ -3,7 +3,7 @@ Author: Abhishek Singh
 Email: isingh.abhishek10@gmail.com
 '''
 
-import pickle
+import pickle5 as pickle
 import streamlit as st
 import requests
 
