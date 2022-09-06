@@ -81,7 +81,7 @@ here is a demo,
 Clone the repository
 
 ```bash
-https://github.com/entbappy/Movie-Recommender-System-Using-Machine-Learning.git
+https://github.com/aibi10/Movie-Recommender-System.git
 ```
 
 ### STEP 01- Create a conda environment after opening the repository
